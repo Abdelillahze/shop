@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+body {
+  background-color: #15141b;
+  color: white;
+  font-family: sans-serif;
+}
+
+input {
+  background-color: black;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.parent {
+  margin-top: 50px;
+}
+
+.parent h1,
+.parent p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.parent input {
+  width: 100%;
+}
+
+.parent .price {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent .price input {
+  margin-right: 5px;
+  width: calc(100% / 5);
+  margin-bottom: 0;
+}
+
+.parent .price p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100px;
+  background-color: crimson;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 0;
+}
+
+.parent .create {
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.parent .search input {
+  width: 100%;
+}
+
+.parent .search .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.parent .search .flex div {
+  width: 45%;
+  background-color: crimson;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.parent .search .delete-all {
+  width: 100%;
+  background-color: crimson;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+table {
+  margin-bottom: 50px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table .thead td {
+  font-weight: bold;
+}
+
+table td {
+  border-top: 1px solid red;
+  padding: 10px;
+  text-align: center;
+}
+
+table .update,
+table .delete {
+  padding: 5px;
+  background-color: crimson;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=master.css.map */

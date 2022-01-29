@@ -1,0 +1,107 @@
+@import "../framework/_basic.sass";
+@import "../framework/mixin";
+
+body {
+  background-color: rgb(21, 20, 27);
+  color: white;
+  font-family: sans-serif;
+}
+
+input {
+  background-color: black;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.parent {
+  margin-top: 50px;
+  h1,
+  p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  input {
+    width: 100%;
+  }
+  .price {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    input {
+      margin-right: 5px;
+      width: calc(100% / 5);
+      margin-bottom: 0;
+    }
+    p {
+      @include flex(flex-start, center, row);
+      width: 100px;
+      background-color: crimson;
+      border-radius: 5px;
+      padding: 5px;
+      margin-bottom: 0;
+    }
+  }
+  .create {
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .search {
+    input {
+      width: 100%;
+    }
+    .flex {
+      @include flex(space-between, center, row);
+      div {
+        width: 45%;
+        background-color: crimson;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+    }
+    .delete-all {
+      width: 100%;
+      background-color: crimson;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+table {
+  margin-bottom: 50px;
+  border-collapse: collapse;
+  .thead {
+    td {
+      font-weight: bold;
+    }
+  }
+  td {
+    border-top: 1px solid red;
+    padding: 10px;
+    text-align: center;
+  }
+  width: 100%;
+  .update,
+  .delete {
+    padding: 5px;
+    background-color: crimson;
+    text-align: center;
+    width: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
