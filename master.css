@@ -110,7 +110,8 @@ input {
   margin-bottom: 0;
 }
 
-.parent .create {
+.parent .create,
+.parent .update {
   background-color: crimson;
   color: white;
   cursor: pointer;
@@ -118,6 +119,10 @@ input {
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+
+.parent .update {
+  display: none;
 }
 
 .parent .search input {
@@ -176,8 +181,8 @@ table td {
   text-align: center;
 }
 
-table .update,
-table .delete {
+table .Update,
+table .Delete {
   padding: 5px;
   background-color: crimson;
   text-align: center;

@@ -44,7 +44,8 @@ input {
       margin-bottom: 0;
     }
   }
-  .create {
+  .create,
+  .update {
     background-color: crimson;
     color: white;
     cursor: pointer;
@@ -52,6 +53,9 @@ input {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
+  }
+  .update {
+    display: none;
   }
   .search {
     input {
@@ -95,8 +99,8 @@ table {
     text-align: center;
   }
   width: 100%;
-  .update,
-  .delete {
+  .Update,
+  .Delete {
     padding: 5px;
     background-color: crimson;
     text-align: center;
